@@ -52,6 +52,7 @@ $(ARTICLE).pdf : $(ARTICLE).tex $(ARTICLE_INC)
 	pdflatex $(ARTICLE)
 	biber $(ARTICLE)
 	pdflatex $(ARTICLE)
+	pdflatex $(ARTICLE)
 
 
 # Housekeeping.

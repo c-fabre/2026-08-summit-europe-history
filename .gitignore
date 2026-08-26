@@ -1,0 +1,43 @@
+# Ignore all emacs backup and autosave files.
+*~
+[#]*[#]
+
+# Ignore MS garbage
+.~lock*
+
+# Ignore the Mac OS hidden folders.
+.DS_Store
+
+# Ignore LaTeX intermediate files.
+*.acn
+*.acr
+*.alg
+*.aux
+*.bcf
+*.bbl
+*.blg
+*.dvi
+*.glg
+*.glo
+*.gls
+*.idx
+*.ilg
+*.ind
+*.ist
+*.lof
+*.log
+*.lot
+*.maf
+*.mtc
+*.mtc1
+*.out
+*.run.xml
+*.synctex.gz
+*.tdo
+*.toc
+
+# Local conf. of Makefiles.
+local-conf.mk
+
+# Produced PDF do not belong to the repo.
+/LaTeX/*.pdf

@@ -1,5 +1,5 @@
 # No LaTeX included files at first.
-ARTICLE_INC+=
+ARTICLE_INC+=bibliography.bib
 
 
 # Include local configuration, if any, where variables can be set.
@@ -47,7 +47,7 @@ timestamp : $(ARTICLE).pdf
 
 
 # Produce the local draft.
-$(ARTICLE).pdf : $(ARTICLE).tex 
+$(ARTICLE).pdf : $(ARTICLE).tex $(ARTICLE_INC)
 	pdflatex $(ARTICLE)
 	pdflatex $(ARTICLE)
 	biber $(ARTICLE)

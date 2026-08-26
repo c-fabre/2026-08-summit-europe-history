@@ -27,6 +27,9 @@
 	twoside, % Two side traditional mode where headers and footers change between odd and even pages, comment this option to make them fixed
 ]{LTJournalArticle}
 
+\usepackage{array}
+\usepackage{tabularx}
+
 \addbibresource{bibliography.bib} % BibLaTeX bibliography file
 \renewcommand*{\bibfont}{\footnotesize}
 
@@ -97,8 +100,22 @@ TBD.
 
 
 \section{Early events in France}
-
-
+Foo bar
+\begin{table*}[t]
+  \centering
+  \caption{Early RISC-V Events in France}
+  \label{fr}
+  \begin{tabularx}{\textwidth}{|c|c|c|c|c|X|}
+    \hline
+    Date & Duration & Location & Attendees & Committees & Presentations selections \\
+    \hline
+    Oct. 2018 & 1 day & Grenoble & 80 & CEA researchers & Academics only, on invitation \\
+    \hline
+    Oct. 2019 & 2 days & Paris & 110 & Academics \& industrials & On invitation \\
+              & 1 day  &       &     & GDR SoC2                 & On invitation \\
+    \hline
+  \end{tabularx}
+\end{table*}
 
 
 %----------------------------------------------------------------------------------------

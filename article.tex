@@ -29,6 +29,9 @@
 
 \usepackage{array}
 \usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{makecell}
 
 \addbibresource{bibliography.bib} % BibLaTeX bibliography file
 \renewcommand*{\bibfont}{\footnotesize}
@@ -105,15 +108,16 @@ Foo bar
   \centering
   \caption{Early RISC-V Events in France}
   \label{fr}
-  \begin{tabularx}{\textwidth}{|c|c|c|c|c|X|}
-    \hline
-    Date & Duration & Location & Attendees & Committees & Presentations selections \\
-    \hline
-    Oct. 2018 & 1 day & Grenoble & 80 & CEA researchers & Academics only, on invitation \\
-    \hline
-    Oct. 2019 & 2 days & Paris & 110 & Academics \& industrials & On invitation \\
-              & 1 day  &       &     & GDR SoC2                 & On invitation \\
-    \hline
+  \begin{tabularx}{\textwidth}{ccccXc}
+    \toprule
+    \makecell{\bf Date \& \\ \bf Location} & \bf Duration & \bf Attendees & \bf Committees & \bf Presentations selections \\
+    \midrule
+    \makecell{Oct. 2018\\Grenoble} & 1 day  & 80 & CEA researchers & Academics only, on invitation \\
+    \midrule
+    \multirow{2}{*}{\centering\makecell{Oct. 2019\\Paris}} & 2 days & 110 & Academics \& industrials & On invitation \\
+    \cmidrule(lr){2-2}\cmidrule(){4-5}
+      & 1 day  &     & GDR SoC2                 & On invitation \\
+    \bottomrule
   \end{tabularx}
 \end{table*}
 

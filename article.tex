@@ -32,6 +32,7 @@
 \usepackage{booktabs}
 \usepackage{multirow}
 \usepackage{makecell}
+\usepackage{glossaries}
 
 \addbibresource{bibliography.bib} % BibLaTeX bibliography file
 \renewcommand*{\bibfont}{\footnotesize}
@@ -75,6 +76,12 @@ how the main European RISC-V event came to be} % Article title, use manual lines
                 RISC-V Summits.
 	\end{abstract}
 }
+
+%% Glossary stuff..
+\makeglossaries
+\loadglsentries{glossary}
+\glsdisablehyper
+
 
 %----------------------------------------------------------------------------------------
 
@@ -216,10 +223,10 @@ second by inviting \citetitle{OPENHW}, a then Canada-based foundation,
 to organize a one day side event. Participation was open, but
 presentations at the 2+1 days event were still on invitation. Then the
 \citetitle{WEEK-3} \cite{WEEK-3}, in May 2022, was the first really
-international event we had in France, with a proper PC, CfP, and six
-exhibitors. One of the wise decisions made by the PC was to accept as
-posters the submissions that were not accepted for the plenary while
-still being relevant to the community.
+international event we had in France, with a proper \gls{pc},
+\gls{cfp}, and six exhibitors. One of the wise decisions made by the
+PC was to accept as posters the submissions that were not accepted for
+the plenary while still being relevant to the community.
 
 %% The organization, originating from the CEA in 2018, has been extended to French and then European academics and industrialists, before being completed by RISC-V International in 2023.
 %% The main program, initially by invitation only, has transitioned to a selection process based on contributions.
@@ -234,9 +241,10 @@ still being relevant to the community.
 
 The road to the 1st European-wide event, the \citetitle{BCN-2023} was
 a two-steps process. During the Summer of 2022, organizers of several
-local events joined together into an informal SC. Immediatly after,
-during the Fall of 2022, the SC joined forces with \citetitle{RISCV}
-to put together a shared organisation to run the Barcelona summit.
+local events joined together into an informal \gls{sc}. Immediatly
+after, during the Fall of 2022, the \gls{sc} joined forces with
+\citetitle{RISCV} to put together a shared organisation to run the
+Barcelona summit.
 
 \subsection{European Organizers, Unite!}
 
@@ -254,16 +262,16 @@ collaborations within the group, not everybody knew everybody else;
 countries? (3) What kind of balance should we have between academia
 and industry?
 
-We ended up quickly putting together a Steering Committee of 13
-people: 4 from Austria and Germany, 4 from Spain, 4 from France and 1
-from Switzerland. For the groups with 4 seats, it was agreed that they
+We ended up quickly putting together a \gls{sc} of 13 people: 4 from
+Spain, 4 from Austria and Germany, 4 from France, and 1 from
+Switzerland. For the groups with 4 seats, it was agreed that they
 would pick 2 people from industry, and 2 from academia. This went
-smoothly and we were able to start the SC work.
+smoothly and we were able to quickly start the \gls{sc} work.
 
-The first SC decisions were to agree on an event format, how to build
-its program, the team that would be in charge, and to decide where the
-events would be held. We easily reached a strong consensus on each of
-these issues.
+The first \gls{sc} decisions were to agree on an event format, how to
+build its program, the team that would be in charge, and to decide
+where the events would be held. We easily reached a strong consensus
+on each of these issues.
 
 Our format would be a yearly full week as 1+3+1 days. With 1 day of
 tutorials and working group meetings, 3 days for the main conference,
@@ -271,15 +279,15 @@ and 1 day for \emph{side events} like workshops (open or closed)
 related to RISC-V or open hardware, such as technology demonstration
 or private consortium meetings of publicly funded collaborative
 projects. The program would include sponsors keynotes, invited talks
-and keynotes. A CfP would be issued, and submissions will be reviewed
-by a PC. The best submissions would be presented in plenary sessions
-while most of others would be accepted as posters.  For the location,
-we agreed that the three next events will be hosted by the three main
-countries: Barcelona in 2023, Munich in 2024 and Paris in 2025. As for
-the team, we picked a LCC close to the SC\footnote{The first three LCC
-for Barcelona, Munich and Paris were actually all academic SC
-members.} and planned to team up with \citetitle{RISCV} and hire a
-local PCO.
+and keynotes. A \gls{cfp} would be issued, and submissions will be
+reviewed by a PC. The best submissions would be presented in plenary
+sessions while most of others would be accepted as posters.  For the
+location, we agreed that the three next events will be hosted by the
+three main countries: Barcelona in 2023, Munich in 2024 and Paris in
+2025. As for the team, we picked a \gls{lcc} close to the
+\gls{sc}\footnote{The first three \gls{lcc} for Barcelona, Munich and Paris
+were actually all academic \gls{sc} members.} and planned to team up
+with \citetitle{RISCV} and hire a local \gls{pco}.
 
 \subsection{Joining forces with RISC-V International}
 
@@ -287,12 +295,13 @@ TBD: strong agreement with RVI on joining forces for a Summit Europe!
 RVI brings marketing (incl. the \emph{RISC-V Summit} brand),
 sponsoring (contact and admin), contacts to have a global reach in the
 PC, and brings world-wide level keynotes and talks, and is more focus
-on industry. SC names the PCC, proposed the location, deals with the
-practicalities of orga, also brings world-level keynotes and talks,
-and has more of an academic focus. The PC ranks the submissions and
-sort out posters from plenaries presentations. The final porgram is a
-shared responsability between the SC and RVI. Both the SC and RVI
-collaborate with the PCO.
+on industry. \gls{sc} names the \gls{pco}, proposed the location,
+deals with the practicalities of orga, also brings world-level
+keynotes and talks, and has more of an academic focus. The \gls{pc}
+ranks the submissions and sort out posters from plenaries
+presentations. The final porgram is a shared responsability between
+the \gls{sc} and RVI. Both the \gls{sc} and RVI collaborate with the
+\gls{pco}.
 
 \section{The RISC-V Summits Europe}
 
@@ -307,11 +316,13 @@ proactive with the global audience on the specificities of the local
 Eureopean ecosystem(s).
 
 \section{About the authors}
+\glsresetall
 
-Teresa was the LCC chair for the first \citetitle{BCN-2023} on June
-2023 and Christian for the \citetitle{PAR-2025} of 2025. Both authors
-have been chairing the SC. Christian from its inception in the Summer
-of 2022 until end of January 2025, and Teresa since then.
+Teresa was the \gls{lcc} chair for the first \citetitle{BCN-2023} on
+June 2023 and Christian for the \citetitle{PAR-2025} of 2025. Both
+authors have been chairing the \gls{sc}. Christian from its inception
+in the Summer of 2022 until end of January 2025, and Teresa since
+then.
 
 
 %----------------------------------------------------------------------------------------

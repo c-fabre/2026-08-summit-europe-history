@@ -49,6 +49,11 @@ timestamp : $(ARTICLE).pdf
 # Produce the local draft.
 $(ARTICLE).pdf : $(ARTICLE).tex $(ARTICLE_INC)
 	pdflatex $(ARTICLE)
+	makeglossaries $(ARTICLE)
+	biber $(ARTICLE)
+	pdflatex $(ARTICLE)
+	makeglossaries $(ARTICLE)
+	biber $(ARTICLE)
 	pdflatex $(ARTICLE)
 	biber $(ARTICLE)
 	pdflatex $(ARTICLE)

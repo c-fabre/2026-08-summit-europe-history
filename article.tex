@@ -62,14 +62,13 @@ how the main European RISC-V event came to be} % Article title, use manual lines
 % Full-width abstract
 \renewcommand{\maketitlehookd}{%
 	\begin{abstract}
-		\noindent RISC-V is an open, global technology whose
-                impact varies by region. In Europe, various
-                communities, gathering both academic and industrial
-                interested in RISC-V and open-source hardware began
-                organizing local meetups very early on. After a while,
-                it became clear that a larger, continent-wide event
-                that would bring people together would be entirely
-                appropriate. This article summarizes how organizers of
+		\noindent RISC-V is a global technology whose impact
+                varies by region. In Europe, various communities
+                gathering both academic and industrial interested in
+                RISC-V and open-source hardware organised local events
+                early on. After a while, it became clear that
+                continent-wide event that would bring people together
+                was needed. This article summarizes how organizers of
                 some of these events eventually got together and
                 joined forces with other players to create the “RISC-V
                 Summit Europe” series, one of the three world-class
@@ -105,24 +104,23 @@ hardware solutions.
 
 Before this, the duopoly of Intel/AMD and ARM on processor cores made
 research in \textmu architecture very difficult. Their proprietary
-nature prevented the implementation of the instructions sets. Even in
-cases where access to the source code of commercial cores was granted,
-the licensing issues made it difficult to collaborate about and
-experiment with new hardware features or extensions. Therefore, the
-knowledge of ISA implementation and processor design was very scarce
-in Europe, as most of teams working on CPU were based mostly in the
-USA, in Cambridge (UK), in Israel, and a couple of other locations.
+nature prevented the implementation of the instructions sets. Even
+when access to the source code of commercial cores was granted, the
+licensing issues made it difficult to collaborate about and experiment
+with new hardware features or extensions. Therefore, the knowledge of
+ISA implementation and processor design was very scarce in Europe, as
+most of teams working on CPU were based mostly in the USA, in
+Cambridge (UK), in Israel, and a couple of other locations.
 
-As a consequence, the potential benefits of RISC-V for Europe came
-with several challenges: (a) there were very few, if any, curriculum
-for processor design at the master or PhD level; (b) both academia and
-industry had very small teams knowledgeable in processor design; (c)
-there was neither national nor European ecosystems to take on RISC-V;
-and (d), due to the proprietary nature of existing ISAs, the software
-community was taking existing architecture as a given, and was not
-used to collaborate with hardware communities on processor design.
-
-In other words, everything had to be constructed almost from scratch.
+Therefore the potential benefits of RISC-V for Europe came with
+several challenges: (a) there were very few curriculum for processor
+design at the master or PhD level; (b) both academia and industry had
+very small teams knowledgeable in processor design; (c) there was
+neither national nor European ecosystems to take on RISC-V; and (d),
+due to the proprietary nature of existing ISAs, the software community
+was taking existing architecture as a given, and was not used to
+collaborate with hardware communities on processor design.  In other
+words, everything had to be constructed almost from scratch.
 
 This paper tries to summarizes a key point of the construction of the
 Eureopan RISC-V ecosystem: how the burgeoning European RISC-V
@@ -140,17 +138,22 @@ Europe}; And last a conclusion with some perspectives.
 \section{Early local events}
 
 \subsection{Spain}
-TBD.
+
+\input{table-sp}
+
+Spain held several events related to RISC-V -- see
+Tabbe\;\ref{table-sp}, including the very first \citetitle{BCN-2018}
+that gathered 300 people in Barcelona on May 2018, and a series of
+workshops on RISC-V and OpenPOWER.
 
 \subsection{Switzerland}
 
 \input{table-ch}
 
-One of the first large scale RISC-V European events was in Switzerland
--- see Table\;\ref{table-ch}. From June 11th to 14th, 2019, 350 people
-gathered in ETH Zurich for two days of exchanges on RISC-V. This was
-followed by two days on open source hardware organised by the
-\citetitle{FOSSI} \cite{FOSSI}.
+The 2nd RISC-V Workshop in Europe was held in Switzerland -- see
+Table\;\ref{table-ch}. From June 11 to 14, 2019, 350 people gathered
+in ETH Zurich for two days on RISC-V, followed by two days about open
+source hardware organised by the \citetitle{FOSSI} \cite{FOSSI}.
 
 \subsection{Germany}
 
@@ -169,16 +172,18 @@ Technology and Space: \citetitle{COMPACT}, \citetitle{CONFIRM}, and
 
 \input{table-fr}
 
-One of the main benefits of RISC-V is to enable actual collaboration
-on hardware and software research, i.e. co-design.  Although things
-have changes since then, in 2018 the national ecosystem was such that
-INRIA was one of the main institutions dedicated to software research,
-with some activities in \textmu architecture, while conversely, the
-CEA carried out a large part of chip design activities, with some work
-in basic software.  The French events --~see Table\;\ref{table-fr}~--
+The French events --~see Table\;\ref{table-fr}~--
 started in October 2018, and expanded gradually in scope and openness
 until May 2022. They have been basically co-managed by CEA and INRIA
 since 2019.
+
+A benefits of RISC-V is to enable actual collaboration on hardware and
+software research, i.e. co-design.  Although things have changes since
+then, in 2018 the national ecosystem was such that INRIA was one of
+the main institutions dedicated to software research, with some
+activities in \textmu architecture, while conversely, the CEA carried
+out a large part of chip design activities, with some work in basic
+software.
 
 The \citetitle{MTG-1} \cite{MTG-1} was set up on short notice, on
 October 2018 in Grenoble, and was organised in a hurry by a committee
@@ -215,10 +220,9 @@ accepted for the plenary while still being relevant to the community.
 
 The road to the 1st European-wide event, the \citetitle{BCN-2023} was
 a two-steps process. During the Summer of 2022, organizers of several
-local events joined together into an informal \gls{sc}. Immediatly
-after, during the Fall of 2022, the \gls{sc} joined forces with
-\citetitle{RISCV} to put together a shared organisation to run the
-Barcelona summit.
+local events joined together into an informal \gls{sc}. Then during
+the Fall of 2022, the \gls{sc} joined forces with \citetitle{RISCV} to
+put together a shared organisation to run the Barcelona summit.
 
 \subsection{European Organizers, Unite!}
 
@@ -240,7 +244,7 @@ We ended up quickly putting together a \gls{sc} of 13 people: 4 from
 Spain, 4 from Austria and Germany, 4 from France, and 1 from
 Switzerland. For the groups with 4 seats, it was agreed that they
 would pick 2 people from industry, and 2 from academia. This went
-smoothly and we were able to quickly start the \gls{sc} work.
+smoothly and we quickly started the \gls{sc} work.
 
 The first \gls{sc} decisions were to define a prefered event format,
 how to build its program, define the team that would be in charge, and
@@ -317,7 +321,7 @@ $N+1$ as co-chairs for year $N$, working with the current chair.
 Each of the three wolrd-class Summits has its local flavor and
 characteristics. The RISC-V Summit Europe seems to be vey much about
 research and innovation, with lots of presentations from PhD students
-and researchers. But one of the key aspects of the European RISC-V and
+and researchers. Another key aspects of the European RISC-V and
 open source ecosystem, is that academics and industrials involved in
 these technologies do know each other, and most of them are attending
 the Summit Europe. This is due to the numerous EU-funded R\&D

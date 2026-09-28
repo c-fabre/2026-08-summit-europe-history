@@ -22,8 +22,14 @@ ARTICLE?=article
 
 
 # Included files, if any.
-ARTICLE_INC+=
-
+ARTICLE_INC+=LTJournalArticle.cls
+ARTICLE_INC+=bibliography.bib
+ARTICLE_INC+=glossary.tex
+ARTICLE_INC+=table-ch.tex
+ARTICLE_INC+=table-de.tex
+ARTICLE_INC+=table-fr.tex
+ARTICLE_INC+=table-sp.tex
+ARTICLE_INC+=table-summits.tex
 
 # Timestamp and delivery directory for the article.
 

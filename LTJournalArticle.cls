@@ -36,6 +36,7 @@
 %	REQUIRED PACKAGES AND MISC CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
+\usepackage{lastpage} % Required for proper page numbering
 \usepackage{graphicx} % Required for including images
 \graphicspath{{Figures/}{./}} % Specifies where to look for included images (trailing slash required)
 
@@ -84,9 +85,9 @@
 \fancyhead[RO]{\small\textit{\runninghead}} % Right-odd page header
 \fancyhead[LE]{\small\textit{\runninghead}} % Left-even page header
 
-\fancyfoot[RO]{\small\textbf{\thepage}} % Right-odd page footer
+\fancyfoot[RO]{\small\textbf{\thepage/\pageref{LastPage}}} % Right-odd page footer
 \fancyfoot[LO]{\footnotesize\footertext} % Left-odd page footer
-\fancyfoot[LE]{\small\textbf{\thepage}} % Left-even page footer
+\fancyfoot[LE]{\small\textbf{\thepage/\pageref{LastPage}}} % Left-even page footer
 \fancyfoot[RE]{\footnotesize\footertext} % Left-even page footer
 
 %----------------------------------------------------------------------------------------
